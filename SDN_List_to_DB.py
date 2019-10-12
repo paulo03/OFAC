@@ -95,7 +95,7 @@ def ind_entry(df_ind):
                                                          note,
                                                          extra) 
                      VALUES(?, ?, ?, ?, ?, ?)''',
-              (df_ind['#'][count],
+              (int(df_ind['#'][count]),
                df_ind['Last Name'][count],
                df_ind['First Name'][count], 
                df_ind['Global Tag'][count],
@@ -113,7 +113,7 @@ def corp_entry(df_corp):
                                                           country,
                                                           extra) 
                      VALUES(?, ?, ?, ?, ?)''',
-              (df_corp['#'][count],
+              (int(df_corp['#'][count]),
                df_corp['Name'][count],
                df_corp['Type'][count],
                df_corp['Country'][count],
